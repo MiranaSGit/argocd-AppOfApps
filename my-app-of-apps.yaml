@@ -1,0 +1,12 @@
+project: default
+source:
+  repoURL: 'https://github.com/MiranaSGit/argocd-AppOfApps.git'
+  path: apps
+  targetRevision: HEAD
+destination:
+  server: 'https://kubernetes.default.svc'
+  namespace: argocd
+syncPolicy:
+  automated:
+    prune: true
+    selfHeal: true
