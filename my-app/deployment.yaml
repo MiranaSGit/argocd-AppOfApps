@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: my-app
-        image: mirana/react
+        image: mirana/react-1.0
         ports:
         - containerPort: 8080
